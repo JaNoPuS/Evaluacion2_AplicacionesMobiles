@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/d3f9fac76c7eb69efc8420f30e659550"
+    android:padding="16dp">
+
+    <!-- Título -->
+
+    <TextView
+        android:id="@+id/tit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresa tu Facción"
+        android:textColor="#FFD700"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/spOptions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNombre" />
+
+    <TextView
+        android:id="@+id/tit22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cuanto Juegas Al WoW??"
+        android:textColor="#FFD700"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/rgFrecuencia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spOptions"
+        app:layout_constraintVertical_bias="0.329" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ingresa tu Nick"
+        android:textColor="#FFD700"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/etNombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
+
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:hint="Ingresa tu nombre"
+        android:padding="12dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#BFBFBF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <Spinner
+        android:id="@+id/spOptions"
+        android:layout_width="387dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="56dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#000000"
+        android:foregroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNombre" />
+
+    <RadioGroup
+        android:id="@+id/rgFrecuencia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnEnviar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spOptions"
+        app:layout_constraintVertical_bias="0.307">
+
+        <RadioButton
+            android:id="@+id/rbNunca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nunca"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/rbUnaVez"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Una vez por semana"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/rbTodosLosDias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Todos los días"
+            android:textColor="#FFFFFF" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_background"
+        android:text="Enviar Encuesta"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="202dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="68dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgFrecuencia"
+        app:srcCompat="@drawable/world_of_warcraft_the_war_within" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
